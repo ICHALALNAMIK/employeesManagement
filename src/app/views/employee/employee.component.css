@@ -1,0 +1,54 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.controles-container {
+  width: 100%;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+}
+.validation {
+  margin-top: 40px;
+  padding-bottom:40px;
+  align-content: end;
+  text-align: end;
+}
+mat-form-field {
+  width: 80%;
+}
+button {
+  margin-left: 5px;
+  margin-right: 10px;
+  padding: 5px 5px 5px 5px;
+  text-align: right;
+  flex: none;
+  position: relative;
+}
+.container .div-validation {
+  align-content: center;
+  text-align: center;
+}
+.container {
+  align-content: center;
+  width: 100%;
+  margin: auto;
+  padding:0px;
+}
+mat-toolbar div.span {
+  align-content: center;
+  text-align: center;
+}
+
+  input .right-align::-webkit-outer-spin-button, input.right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.right-align {
+  -moz-appearance: textfield;
+}
+span{
+    opacity:0.5;
+}
+mat-icon{
+   
+}
+

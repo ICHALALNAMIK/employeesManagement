@@ -1,0 +1,64 @@
+<div class="container">
+  <mat-toolbar>
+    <span> Ajouter un employée</span>
+  </mat-toolbar>
+ 
+    <form [formGroup]="service.employeeForm" (ngSubmit)="addEmployee()" class="employee-form">
+
+
+      
+          <div class="controles-container">
+            <mat-form-field>
+              <input matInput placeholder="Nom" formControlName="lastName" style="text-transform:uppercase" />
+              <mat-hint>Champ Obligatoire!</mat-hint>
+              <mat-error >
+                Champ Obligatoire!
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="controles-container">
+            <mat-form-field>
+
+              <input matInput placeholder="Prénom" formControlName="fname"   style="text-transform:capitalize" />
+              <mat-hint>Champ Obligatoire!</mat-hint>
+              <mat-error>
+                Champ Obligatoire!
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="controles-container">
+            <mat-form-field>
+              <input matInput placeholder="Age" type="number" formControlName="age"  class="right-align"/>
+              <span matSuffix> Ans</span>
+              <mat-hint>Champ Obligatoire! | Format: chiffres >= 16 ans </mat-hint>
+              <mat-error>
+                Champ Obligatoire! | Format: chiffres >= 16 ans
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="controles-container">
+            <mat-form-field>
+              <input matInput placeholder="Salaire" type="number" formControlName="salary" class="right-align" />
+              <span matSuffix>(en K)</span>
+              <mat-hint>Champ Obligatoire! </mat-hint>
+              <mat-error>
+                Champ Obligatoire! | Format: chiffres(en K)
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+       
+       
+          <div class="controles-container">
+            <input type="hidden" formControlName="$key" />
+          </div>
+      
+        
+
+      <div class="validation">
+          <button mat-stroked-button color="primary" type="submit"  [disabled]="service.employeeForm.invalid">Enregistrer <mat-icon matSuffix>done</mat-icon></button>
+          <button mat-stroked-button  color="warn" (click)="onClear()">Annuler  <mat-icon matSuffix>close</mat-icon></button>
+        </div>
+    </form>
+  
+</div>

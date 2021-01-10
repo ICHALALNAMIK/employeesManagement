@@ -1,0 +1,59 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.employeeDisplay {
+  width: 90%;
+  margin: auto;
+}
+.hide {
+  display: none;
+}
+
+mat-footer-row footer-cell {
+  justify-content: center;
+  font-style: italic;
+}
+.search-div {
+    text-align:start;
+    
+}
+button {
+    margin-right:0px
+}
+.search-form-field {
+    width:40%;
+    margin-left:10px;
+    padding:5px 10px;
+  
+    
+}
+  .search-form-field div.mat-form-field-underline {
+    display: none;
+  }
+
+
+  .search-form-field div.mat-form-field-infix {
+    border-top: 0px;
+  }
+  .search-form-field div.mat-form-field-wrapper {
+    border-top: 0px;
+  }
+   .search-form-field div.mat-form-field-suffix button {
+    height: 32px;
+    width: 32px;
+  }
+.selectForm {
+width:10%;
+text-align:end;
+object-position:right;
+margin-left:10px
+}
+
+
